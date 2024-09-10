@@ -6,7 +6,7 @@
 .recent-work .title{
     font-weight: bold;
     font-size: 2.5rem;
-    margin-top: 8rem;
+    margin-top: 60rem;
     margin-bottom: 3.5rem;
 }
 .recent-work .subtitle{
@@ -66,4 +66,18 @@
     margin: 6rem 0;
     font-size: 2rem;
     text-decoration: none;
+}
+@media(width>600px){
+    .recent-work .title{
+        font-size: 3.5rem;
+    }
+    .recent-work .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*Fazer para maior que 900px de largura.com 3 colunas e 1 fração*/
+@media(width>900px){
+    .recent-work .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
